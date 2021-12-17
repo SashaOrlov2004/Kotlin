@@ -19,4 +19,8 @@ class SecondActivity : AppCompatActivity() {
         bindingClass.text2.text = intent.getStringExtra("text1String")
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
+    fun backTransmit(view: View){
+        val transmit = Intent(this, MainActivity::class.java)
+        startActivity(transmit)
+    }
 }
